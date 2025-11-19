@@ -68,3 +68,27 @@ body {
   object-fit: contain !important;
   max-width: 100% !important;
 }
+
+/* Fix layout width for Notion pages (desktop only) */
+@media (min-width: 900px) {
+  .notion-page:not(.notion-viewport) {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+  }
+
+  .notion {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+  }
+}
+
+/* Ensure full-width blocks from Notion display properly */
+.notion-full-width,
+.notion-collection,
+.notion-gallery,
+.notion-image {
+  width: 100% !important;
+  max-width: 100% !important;
+}
