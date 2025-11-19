@@ -60,3 +60,11 @@ body {
 ::-webkit-scrollbar-track {           
     background-color: var(--bg-color);
 }
+
+/* Fix Notion images cropping */
+.notion img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  max-width: 100% !important;
+}
